@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Gateway</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .field-group {
+      margin-bottom: 20px;
+    }
+    .field-group label {
+      font-weight: bold;
+      display: block;
+    }
+    .field-group .value {
+      margin: 5px 0;
+    }
+    button.copy-btn {
+      margin-left: 10px;
+    }
+    .step {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+    .success {
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Payment Gateway</h2>
+
+  <div class="step">
+    <h3>Step 1: Copy Amount, Name, and VPA/UPI</h3>
+    <div class="field-group">
+      <label>Amount</label>
+      <span class="value" id="amountField">--</span>
+      <button class="copy-btn" data-copy-target="amountField">Copy</button>
